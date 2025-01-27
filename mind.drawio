@@ -1,0 +1,203 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.3 Chrome/130.0.6723.137 Electron/33.2.1 Safari/537.36" version="26.0.3">
+  <diagram name="第 1 页" id="ztpbzlv1TndeiAizWeVI">
+    <mxGraphModel dx="911" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7N8fJA937FwxK6IIyWdn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="4GTQo5QM6bafJJ9mTJLX-1" target="7N8fJA937FwxK6IIyWdn-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4GTQo5QM6bafJJ9mTJLX-1" value="行为库&lt;br&gt;(分多个行为空间)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="880" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4GTQo5QM6bafJJ9mTJLX-2" value="&quot;行为&quot;&lt;br&gt;名称&lt;br&gt;条件&lt;br&gt;效果&lt;br&gt;成本" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="1000" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4GTQo5QM6bafJJ9mTJLX-3" value="规划器&lt;br&gt;&lt;div&gt;(传递世界环境和目标效果)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="560" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4GTQo5QM6bafJJ9mTJLX-4" value="行为空间&lt;div&gt;(存储所有行为)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="940" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4GTQo5QM6bafJJ9mTJLX-5" value="&quot;行为&quot;&lt;br&gt;名称&lt;br&gt;条件&lt;br&gt;效果&lt;br&gt;成本" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="140" y="1000" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4GTQo5QM6bafJJ9mTJLX-6" value="行为空间&lt;div&gt;(存储所有行为)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="940" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4GTQo5QM6bafJJ9mTJLX-7" value="&quot;行为&quot;&lt;br&gt;名称&lt;br&gt;条件&lt;br&gt;效果&lt;br&gt;成本" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="1000" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-3" value="谁在什么条件下干什么获得什么样的效果" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="1090" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="7N8fJA937FwxK6IIyWdn-4" target="7N8fJA937FwxK6IIyWdn-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-4" value="世界环境" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="7N8fJA937FwxK6IIyWdn-5" target="7N8fJA937FwxK6IIyWdn-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-5" value="可用行为库" style="whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="7N8fJA937FwxK6IIyWdn-6" target="7N8fJA937FwxK6IIyWdn-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-6" value="目标效果" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="414" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-7" value="行动规划" style="whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-13" value="动态更新可用行为库可避免每次都全遍历行为库" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="770" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-14" value="移动" style="whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-15" value="移动……" style="whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="600" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-16" value="走到坐标(0，0)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-17" value="无障碍、无异常" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-18" value="移动……&lt;br&gt;攻击……" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-19" value="减速修正&lt;br&gt;移动" style="whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-20" value="减速修正&lt;br&gt;移动" style="whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="960" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-21" value="走到坐标(0，0)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-22" value="减速" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-23" value="移动……&lt;br&gt;攻击……" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-25" value="&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;经过整理，GOAP规划行动需要有：行为库、世界环境、目标效果&lt;/p&gt;&lt;p&gt;运行步骤如下：&lt;/p&gt;&lt;p&gt;1、按照世界环境从行为库中筛选出可用行为库&lt;/p&gt;&lt;p&gt;2、按照目标效果从可用行为库中规划处最短路径&lt;/p&gt;&lt;p&gt;3、按照最短路径执行行为&lt;/p&gt;&lt;p&gt;4、世界环境变化时或者目标效果变化时重新运行上述步骤&lt;/p&gt;&lt;p&gt;根据目前的理解，我计划添加一个行动管理器，维护一个行动库，同时可以按照传入的世界环境和目标效果规划行动路径，行为库中按照生物种类分成多个空间，比如熊、僵尸等，不同的熊的世界环境会有差异，所以行动也会有所不同，这很方便，玩家行动不设置明确目标，比如向某个方向移动等，如果有减速效果，则在世界环境中添加减速，减速结束后，世界环境变化，重新规划行动即可&lt;/p&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="410" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-26" value="减速修正&lt;br&gt;移动" style="whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1400" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-27" value="减速修正&lt;br&gt;移动" style="whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1320" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-28" value="向(1,1)方向移动" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1480" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-29" value="减速" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1400" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-30" value="移动……&lt;br&gt;攻击……" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-38" value="全局世界状态" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-39" value="私有世界状态" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-40" value="当前世界状态" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="700" y="240" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-42" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" parent="1" source="7N8fJA937FwxK6IIyWdn-38" target="7N8fJA937FwxK6IIyWdn-40" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="970" y="240" as="sourcePoint" />
+            <mxPoint x="1050" y="240" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-43" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" parent="1" source="7N8fJA937FwxK6IIyWdn-39" target="7N8fJA937FwxK6IIyWdn-40" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="890" y="230" as="sourcePoint" />
+            <mxPoint x="970" y="230" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-45" value="其他影响" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="534" y="140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-46" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" parent="1" source="7N8fJA937FwxK6IIyWdn-45" target="7N8fJA937FwxK6IIyWdn-38" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="650" y="80" as="sourcePoint" />
+            <mxPoint x="730" y="80" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-47" value="最终行动目标" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="700" y="340" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-49" value="行动链" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="827" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-50" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" parent="1" source="7N8fJA937FwxK6IIyWdn-40" target="7N8fJA937FwxK6IIyWdn-49" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="910" y="240" as="sourcePoint" />
+            <mxPoint x="990" y="240" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-51" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" parent="1" source="7N8fJA937FwxK6IIyWdn-47" target="7N8fJA937FwxK6IIyWdn-49" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="820" y="390" as="sourcePoint" />
+            <mxPoint x="900" y="390" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-52" value="行动库" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-53" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" parent="1" source="7N8fJA937FwxK6IIyWdn-52" target="7N8fJA937FwxK6IIyWdn-49" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="960" y="390" as="sourcePoint" />
+            <mxPoint x="1040" y="390" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7N8fJA937FwxK6IIyWdn-54" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" parent="1" source="7N8fJA937FwxK6IIyWdn-49" target="7N8fJA937FwxK6IIyWdn-39" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="900" y="220" as="sourcePoint" />
+            <mxPoint x="980" y="220" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdeeGB7fIttDKXOStnM0-2" value="行动" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="80" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="OdeeGB7fIttDKXOStnM0-4" value="条件1" style="ellipse;whiteSpace=wrap;html=1;" parent="OdeeGB7fIttDKXOStnM0-2" vertex="1">
+          <mxGeometry y="40" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OdeeGB7fIttDKXOStnM0-5" value="效果1" style="ellipse;whiteSpace=wrap;html=1;" parent="OdeeGB7fIttDKXOStnM0-2" vertex="1">
+          <mxGeometry y="120" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OdeeGB7fIttDKXOStnM0-6" value="条件2" style="ellipse;whiteSpace=wrap;html=1;" parent="OdeeGB7fIttDKXOStnM0-2" vertex="1">
+          <mxGeometry x="40" y="40" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OdeeGB7fIttDKXOStnM0-7" value="成本" style="ellipse;whiteSpace=wrap;html=1;" parent="OdeeGB7fIttDKXOStnM0-2" vertex="1">
+          <mxGeometry y="200" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="28Hz7f1aDfR1WRUMnI_M-3" value="环境状态&lt;br&gt;Callable" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="OdeeGB7fIttDKXOStnM0-2">
+          <mxGeometry x="40" y="120" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OdeeGB7fIttDKXOStnM0-9" value="环境状态" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" parent="1" vertex="1">
+          <mxGeometry x="1320" y="80" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OdeeGB7fIttDKXOStnM0-12" value="Callable -&amp;gt; bool" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1320" y="220" width="200" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,222 @@
+[gd_scene format=3 uid="uid://c204n5b5sb0k2"]
+
+[node name="Test" type="Node"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="PanelContainer" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/Control"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer4/VBoxContainer4"]
+layout_mode = 2
+text = "共享世界环境"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer4/VBoxContainer4"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer4/VBoxContainer4/VBoxContainer"]
+layout_mode = 2
+text = "下雨"
+
+[node name="HSeparator" type="HSeparator" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer4/VBoxContainer5"]
+layout_mode = 2
+text = "私有世界环境"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer4/VBoxContainer5"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer4/VBoxContainer5/VBoxContainer"]
+layout_mode = 2
+text = "木头x7"
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer4/VBoxContainer5/VBoxContainer"]
+layout_mode = 2
+text = "减速"
+
+[node name="VSeparator" type="VSeparator" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "统计世界环境"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer3/VBoxContainer"]
+layout_mode = 2
+text = "木头x7"
+
+[node name="HSeparator" type="HSeparator" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "行动库"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "移动(速度、方向)"
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "近战攻击"
+
+[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "远程射击(目标)"
+
+[node name="VSeparator2" type="VSeparator" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer2"]
+layout_mode = 2
+text = "可用行动"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+text = "制作木镐"
+
+[node name="VSeparator3" type="VSeparator" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2"]
+layout_mode = 2
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LineEdit" type="LineEdit" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer3"]
+layout_mode = 2
+placeholder_text = "行动目标"
+alignment = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer3"]
+layout_mode = 2
+text = "行动序列"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer3"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control/HBoxContainer2/VBoxContainer3/VBoxContainer"]
+layout_mode = 2
+text = "制作木镐"
+
+[node name="Control2" type="PanelContainer" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control2"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control2/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "环境状态"
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="CanvasLayer/HBoxContainer/Control2/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "环境状态名"
+alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/HBoxContainer/Control2/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "添加环境状态"
+
+[node name="HSeparator" type="HSeparator" parent="CanvasLayer/HBoxContainer/Control2/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/Control2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/Control2/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "条件"
+horizontal_alignment = 1
+
+[node name="TextEdit" type="TextEdit" parent="CanvasLayer/HBoxContainer/Control2/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/Control2/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "效果"
+horizontal_alignment = 1
+
+[node name="TextEdit2" type="TextEdit" parent="CanvasLayer/HBoxContainer/Control2/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/Control2/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "成本/损耗"
+horizontal_alignment = 1
+
+[node name="TextEdit3" type="TextEdit" parent="CanvasLayer/HBoxContainer/Control2/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button2" type="Button" parent="CanvasLayer/HBoxContainer/Control2/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "添加行为"
