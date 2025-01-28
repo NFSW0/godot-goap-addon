@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://beqee478mnb8c"]
+[gd_scene load_steps=3 format=3 uid="uid://beqee478mnb8c"]
 
 [ext_resource type="PackedScene" uid="uid://hsi178uy6rig" path="res://addons/nt_goap/nt_goap_library_view.tscn" id="1_6hvyf"]
+[ext_resource type="Script" path="res://addons/nt_goap/nt_goap_environment_target.gd" id="1_ffuw2"]
 
 [node name="NT_GOAP_Environment_Target" type="Control"]
 layout_mode = 3
@@ -11,6 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_ffuw2")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -29,10 +31,13 @@ text = "目标环境状态"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="NT_GOAP_Library_View" parent="PanelContainer/VBoxContainer" instance=ExtResource("1_6hvyf")]
+[node name="LibraryView" parent="PanelContainer/VBoxContainer" instance=ExtResource("1_6hvyf")]
+unique_name_in_owner = true
 layout_mode = 2
 
 [node name="Button" type="Button" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 0, 1)
 text = "开始决策行动计划"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

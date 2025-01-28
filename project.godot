@@ -14,6 +14,10 @@ config/name="godot-goap-addon"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+NT_GOAP_Manager="*res://addons/nt_goap/nt_goap_manager.gd"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/nt_goap/plugin.cfg")

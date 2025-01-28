@@ -1,6 +1,8 @@
-[gd_scene format=3 uid="uid://b0mpsuta0e7fo"]
+[gd_scene load_steps=2 format=3 uid="uid://b0mpsuta0e7fo"]
 
-[node name="NT_GOAP_Add_Environment" type="Control"]
+[ext_resource type="Script" path="res://addons/nt_goap/nt_goap_environment_add.gd" id="1_rtxgw"]
+
+[node name="NT_GOAP_Environment_Add" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -9,6 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_rtxgw")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -36,8 +39,12 @@ alignment = 1
 layout_mode = 2
 alignment = 1
 selected = 0
-item_count = 1
-popup/item_0/text = "BOOL"
+item_count = 3
+popup/item_0/text = "Bool"
+popup/item_1/text = "Int"
+popup/item_1/id = 2
+popup/item_2/text = "Vec2"
+popup/item_2/id = 1
 
 [node name="Control" type="Control" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2

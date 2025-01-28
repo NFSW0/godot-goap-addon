@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://c24he72l3baoa"]
+[gd_scene load_steps=3 format=3 uid="uid://c24he72l3baoa"]
 
+[ext_resource type="Script" path="res://addons/nt_goap/nt_goap_action_library.gd" id="1_2nwik"]
 [ext_resource type="PackedScene" uid="uid://bjcnxuvrtlia" path="res://addons/nt_goap/nt_goap_action_view.tscn" id="1_xw6od"]
 
 [node name="NT_GOAP_Action_Library" type="Control"]
@@ -11,6 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_2nwik")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -30,7 +32,8 @@ text = "行动库"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="NT_GOAP_Action_View" parent="PanelContainer/VBoxContainer" instance=ExtResource("1_xw6od")]
+[node name="ActionView" parent="PanelContainer/VBoxContainer" instance=ExtResource("1_xw6od")]
+unique_name_in_owner = true
 layout_mode = 2
 
 [node name="Load" type="Button" parent="PanelContainer/VBoxContainer"]

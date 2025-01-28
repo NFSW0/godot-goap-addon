@@ -2,7 +2,9 @@
 extends EditorPlugin
 
 
-const MainPanel = preload("res://addons/nt_goap/nt_goap.tscn")
+const MainPanel = preload("res://addons/nt_goap/nt_goap_interface.tscn")
+const AUTOLOAD_NAME = "NT_GOAP_Manager"
+const AUTOLOAD_FILE = "res://addons/nt_goap/nt_goap_manager.gd"
 
 
 var main_panel_instance
@@ -14,11 +16,14 @@ func _enter_tree():
 	EditorInterface.get_editor_main_screen().add_child(main_panel_instance)
 	# Hide the main panel. Very much required.
 	_make_visible(false)
+	# The autoload can be a scene or script file.
+	add_autoload_singleton(AUTOLOAD_NAME, AUTOLOAD_FILE)
 
 
 func _exit_tree():
 	if main_panel_instance:
 		main_panel_instance.queue_free()
+	remove_autoload_singleton(AUTOLOAD_NAME)
 
 
 func _has_main_screen():

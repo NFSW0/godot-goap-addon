@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://decg8568rmqq2"]
+[gd_scene load_steps=3 format=3 uid="uid://decg8568rmqq2"]
 
 [ext_resource type="PackedScene" uid="uid://hsi178uy6rig" path="res://addons/nt_goap/nt_goap_library_view.tscn" id="1_dattm"]
+[ext_resource type="Script" path="res://addons/nt_goap/nt_goap_environment_global.gd" id="1_tw84l"]
 
 [node name="NT_GOAP_Environment_Global" type="Control"]
 layout_mode = 3
@@ -11,6 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_tw84l")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -29,5 +31,6 @@ text = "全局环境"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="NT_GOAP_Library_View" parent="PanelContainer/VBoxContainer" instance=ExtResource("1_dattm")]
+[node name="LibraryView" parent="PanelContainer/VBoxContainer" instance=ExtResource("1_dattm")]
+unique_name_in_owner = true
 layout_mode = 2
