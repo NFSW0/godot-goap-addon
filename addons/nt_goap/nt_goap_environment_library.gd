@@ -1,13 +1,18 @@
+@tool
 extends Control
+
+
+signal add_environment(environment:NT_GOAP_Environment)
+signal remove_environment(environment:NT_GOAP_Environment)
 
 
 @onready var library_view: ItemList = %LibraryView
 
 
-func update_view(datas:Array):
+func update_view(environments:Array[NT_GOAP_Environment]):
 	library_view.clear()
-	for data in datas:
-		library_view.add_item("%s" % data)
+	for environment in environments:
+		library_view.add_environment_item(environment)
 
 
 func _on_load_pressed() -> void:
@@ -16,3 +21,11 @@ func _on_load_pressed() -> void:
 
 func _on_export_pressed() -> void:
 	update_view(NT_GOAP_Manager.environment_library)
+
+
+func _on_library_view_add_environment(environment: NT_GOAP_Environment) -> void:
+	add_environment.emit(environment)
+
+
+func _on_library_view_remove_environment(environment: NT_GOAP_Environment) -> void:
+	remove_environment.emit(environment)

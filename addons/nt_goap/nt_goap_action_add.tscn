@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cms74bkmitvhh"]
+[gd_scene load_steps=3 format=3 uid="uid://cms74bkmitvhh"]
 
-[ext_resource type="PackedScene" uid="uid://hsi178uy6rig" path="res://addons/nt_goap/nt_goap_library_view.tscn" id="1_8mwlv"]
+[ext_resource type="PackedScene" uid="uid://hsi178uy6rig" path="res://addons/nt_goap/nt_goap_environment_view.tscn" id="1_8mwlv"]
+[ext_resource type="Script" path="res://addons/nt_goap/nt_goap_action_add.gd" id="1_vfdwq"]
 
 [node name="NT_GOAP_Action_Add" type="Control"]
 layout_mode = 3
@@ -11,6 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_vfdwq")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -29,7 +31,14 @@ text = "添加行动"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="NT_GOAP_Library_View" parent="PanelContainer/VBoxContainer" instance=ExtResource("1_8mwlv")]
+[node name="ActionNameInput" type="LineEdit" parent="PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "行为名称"
+alignment = 1
+
+[node name="PreconditionsView" parent="PanelContainer/VBoxContainer" instance=ExtResource("1_8mwlv")]
+unique_name_in_owner = true
 layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer"]
@@ -53,9 +62,16 @@ text = "↓"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="NT_GOAP_Library_View2" parent="PanelContainer/VBoxContainer" instance=ExtResource("1_8mwlv")]
+[node name="EffectsView" parent="PanelContainer/VBoxContainer" instance=ExtResource("1_8mwlv")]
+unique_name_in_owner = true
 layout_mode = 2
 
-[node name="Button" type="Button" parent="PanelContainer/VBoxContainer"]
+[node name="Add" type="Button" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
 text = "添加"
+
+[connection signal="add_environment" from="PanelContainer/VBoxContainer/PreconditionsView" to="." method="_on_preconditions_view_add_environment"]
+[connection signal="remove_environment" from="PanelContainer/VBoxContainer/PreconditionsView" to="." method="_on_preconditions_view_remove_environment"]
+[connection signal="add_environment" from="PanelContainer/VBoxContainer/EffectsView" to="." method="_on_effects_view_add_environment"]
+[connection signal="remove_environment" from="PanelContainer/VBoxContainer/EffectsView" to="." method="_on_effects_view_remove_environment"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Add" to="." method="_on_add_pressed"]

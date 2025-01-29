@@ -160,4 +160,14 @@ size_flags_vertical = 3
 unique_name_in_owner = true
 layout_mode = 2
 
+[connection signal="add_environment" from="Layout/Library/ELibrary/EAdd/EAdd" to="." method="_on_e_add_add_environment"]
+[connection signal="add_environment" from="Layout/Library/ELibrary/EView/ELibiary" to="." method="_on_e_libiary_add_environment"]
+[connection signal="remove_environment" from="Layout/Library/ELibrary/EView/ELibiary" to="." method="_on_e_libiary_remove_environment"]
+[connection signal="add_action" from="Layout/Library/ALibrary/AAdd/AAdd" to="." method="_on_a_add_add_action"]
+[connection signal="add_environment" from="Layout/ESimulation/ESimulate/EEdit/EGlobal/EGlobal" to="." method="_on_e_global_add_environment"]
+[connection signal="remove_environment" from="Layout/ESimulation/ESimulate/EEdit/EGlobal/EGlobal" to="." method="_on_e_global_remove_environment"]
+[connection signal="add_environment" from="Layout/ESimulation/ESimulate/EEdit/ELocal/ELocal" to="." method="_on_e_local_add_environment"]
+[connection signal="remove_environment" from="Layout/ESimulation/ESimulate/EEdit/ELocal/ELocal" to="." method="_on_e_local_remove_environment"]
+[connection signal="add_environment" from="Layout/TSimulation/ETarget" to="." method="_on_e_target_add_environment"]
+[connection signal="remove_environment" from="Layout/TSimulation/ETarget" to="." method="_on_e_target_remove_environment"]
 [connection signal="strat_goap" from="Layout/TSimulation/ETarget" to="." method="_on_e_target_strat_goap"]

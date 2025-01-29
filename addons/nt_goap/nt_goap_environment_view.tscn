@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://hsi178uy6rig"]
 
-[ext_resource type="Script" path="res://addons/nt_goap/nt_goap_library_view.gd" id="1_k0ecj"]
+[ext_resource type="Script" path="res://addons/nt_goap/nt_goap_environment_view.gd" id="1_s3p3t"]
 
-[node name="NT_GOAP_Library_View" type="ItemList"]
+[node name="NT_GOAP_Environment_View" type="ItemList"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -14,4 +14,4 @@ max_columns = 0
 fixed_column_width = 50
 icon_mode = 0
 fixed_icon_size = Vector2i(50, 50)
-script = ExtResource("1_k0ecj")
+script = ExtResource("1_s3p3t")

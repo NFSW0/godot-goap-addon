@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cs6tff21clr1b"]
 
-[ext_resource type="PackedScene" uid="uid://hsi178uy6rig" path="res://addons/nt_goap/nt_goap_library_view.tscn" id="1_b1usc"]
+[ext_resource type="PackedScene" uid="uid://hsi178uy6rig" path="res://addons/nt_goap/nt_goap_environment_view.tscn" id="1_b1usc"]
 [ext_resource type="Script" path="res://addons/nt_goap/nt_goap_environment_library.gd" id="1_orl3g"]
 
 [node name="NT_GOAP_Environment_Library" type="Control"]
@@ -44,5 +44,7 @@ text = "导入"
 layout_mode = 2
 text = "导出"
 
+[connection signal="add_environment" from="PanelContainer/VBoxContainer/LibraryView" to="." method="_on_library_view_add_environment"]
+[connection signal="remove_environment" from="PanelContainer/VBoxContainer/LibraryView" to="." method="_on_library_view_remove_environment"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Load" to="." method="_on_load_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Export" to="." method="_on_export_pressed"]

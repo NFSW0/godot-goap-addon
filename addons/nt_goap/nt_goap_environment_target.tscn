@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://beqee478mnb8c"]
 
-[ext_resource type="PackedScene" uid="uid://hsi178uy6rig" path="res://addons/nt_goap/nt_goap_library_view.tscn" id="1_6hvyf"]
+[ext_resource type="PackedScene" uid="uid://hsi178uy6rig" path="res://addons/nt_goap/nt_goap_environment_view.tscn" id="1_6hvyf"]
 [ext_resource type="Script" path="res://addons/nt_goap/nt_goap_environment_target.gd" id="1_ffuw2"]
 
 [node name="NT_GOAP_Environment_Target" type="Control"]
@@ -40,4 +40,6 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 0, 1)
 text = "开始决策行动计划"
 
+[connection signal="add_environment" from="PanelContainer/VBoxContainer/LibraryView" to="." method="_on_library_view_add_environment"]
+[connection signal="remove_environment" from="PanelContainer/VBoxContainer/LibraryView" to="." method="_on_library_view_remove_environment"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

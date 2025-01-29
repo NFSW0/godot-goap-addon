@@ -11,19 +11,21 @@ var main_panel_instance
 
 
 func _enter_tree():
+	# The autoload can be a scene or script file.
+	add_autoload_singleton(AUTOLOAD_NAME, AUTOLOAD_FILE)
+	
 	main_panel_instance = MainPanel.instantiate()
 	# Add the main panel to the editor's main viewport.
 	EditorInterface.get_editor_main_screen().add_child(main_panel_instance)
 	# Hide the main panel. Very much required.
 	_make_visible(false)
-	# The autoload can be a scene or script file.
-	add_autoload_singleton(AUTOLOAD_NAME, AUTOLOAD_FILE)
 
 
 func _exit_tree():
+	remove_autoload_singleton(AUTOLOAD_NAME)
+	
 	if main_panel_instance:
 		main_panel_instance.queue_free()
-	remove_autoload_singleton(AUTOLOAD_NAME)
 
 
 func _has_main_screen():

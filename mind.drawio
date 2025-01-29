@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.3 Chrome/130.0.6723.137 Electron/33.2.1 Safari/537.36" version="26.0.3">
   <diagram name="第 1 页" id="ztpbzlv1TndeiAizWeVI">
-    <mxGraphModel dx="1072" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="911" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -197,17 +197,54 @@
         <mxCell id="OdeeGB7fIttDKXOStnM0-12" value="Callable -&amp;gt; bool" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1320" y="220" width="200" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="SqAkDnnTAmCSsh7GlRVh-1" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SqAkDnnTAmCSsh7GlRVh-1" value="" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1760" y="160" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="SqAkDnnTAmCSsh7GlRVh-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SqAkDnnTAmCSsh7GlRVh-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1920" y="160" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="SqAkDnnTAmCSsh7GlRVh-3" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SqAkDnnTAmCSsh7GlRVh-3" value="" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1760" y="310" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="SqAkDnnTAmCSsh7GlRVh-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SqAkDnnTAmCSsh7GlRVh-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1920" y="310" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="svb9PYm9G0xNhQE61FWC-1" value="Action" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1760" y="480" width="140" height="130" as="geometry">
+            <mxRectangle x="1750" y="680" width="70" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svb9PYm9G0xNhQE61FWC-2" value="+ name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="svb9PYm9G0xNhQE61FWC-1" vertex="1">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="svb9PYm9G0xNhQE61FWC-3" value="+ pro" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="svb9PYm9G0xNhQE61FWC-1" vertex="1">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="svb9PYm9G0xNhQE61FWC-4" value="+ effect" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="svb9PYm9G0xNhQE61FWC-1" vertex="1">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="svb9PYm9G0xNhQE61FWC-5" value="+ cost" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="svb9PYm9G0xNhQE61FWC-1" vertex="1">
+          <mxGeometry y="104" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="svb9PYm9G0xNhQE61FWC-6" value="NT_GOAP_Environment_State_Resource" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1920" y="480" width="250" height="78" as="geometry">
+            <mxRectangle x="1750" y="680" width="70" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svb9PYm9G0xNhQE61FWC-7" value="+ name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="svb9PYm9G0xNhQE61FWC-6" vertex="1">
+          <mxGeometry y="26" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="svb9PYm9G0xNhQE61FWC-8" value="+ value" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="svb9PYm9G0xNhQE61FWC-6" vertex="1">
+          <mxGeometry y="52" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LrOHb_qDLONoKuuN_F7q-1" value="考虑是否需要携带额外数据：&lt;br&gt;考虑到模块分离，GOAP主要功能是用于决策下一步采用哪种行动，具体的行动实现应该交给具体的对象实现，可以通过信号激活对应的行动" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="1760" y="620" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="LrOHb_qDLONoKuuN_F7q-2" value="对于移动行为：&lt;br&gt;最终目标产生目标坐标&lt;br&gt;本地环境产生当前坐标&lt;br&gt;两者存在则产生移动行为" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="1920" y="620" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="uitV5ZKknbXZIUc3CkKT-1" value="同步数据和显示&lt;br&gt;显示变化同步改正数据&lt;br&gt;数据变化同步改正显示" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="620" width="140" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
