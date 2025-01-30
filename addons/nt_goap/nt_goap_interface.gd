@@ -15,21 +15,24 @@ extends Control
 @onready var debug_contral: Control = %DebugContral  ## 面板-调试控制板
 @onready var debug_view: Control = %DebugView  ## 面板-调试结果
 
+@onready var nt_goap_manager = get_node_or_null("/root/NT_GOAP_Manager")
+
 
 func _ready() -> void:
 	_reflash()
 
 
 func _reflash() -> void:
-	NT_GOAP_Manager.on_environment_changed()
-	e_libiary.update_view(NT_GOAP_Manager.environment_library)
-	a_library.update_view(NT_GOAP_Manager.action_library)
-	e_global.update_view(NT_GOAP_Manager.environment_global)
-	e_local.update_view(NT_GOAP_Manager.environment_local)
-	e_current.update_view(NT_GOAP_Manager.environment_global + NT_GOAP_Manager.environment_local)
-	a_current.update_view(NT_GOAP_Manager.action_possible)
-	e_target.update_view(NT_GOAP_Manager.environment_target)
-	a_plan.update_view(NT_GOAP_Manager.action_plan)
+	if nt_goap_manager:
+		nt_goap_manager.on_environment_changed()
+		e_libiary.update_view(nt_goap_manager.environment_library)
+		a_library.update_view(nt_goap_manager.action_library)
+		e_global.update_view(nt_goap_manager.environment_global)
+		e_local.update_view(nt_goap_manager.environment_local)
+		e_current.update_view(nt_goap_manager.environment_global + nt_goap_manager.environment_local)
+		a_current.update_view(nt_goap_manager.action_possible)
+		e_target.update_view(nt_goap_manager.environment_target)
+		a_plan.update_view(nt_goap_manager.action_plan)
 
 
 func _on_e_target_strat_goap() -> void:
@@ -41,6 +44,7 @@ func _on_e_add_add_environment(environment: NT_GOAP_Environment) -> void:
 	_reflash()
 func _on_a_add_add_action(action: NT_GOAP_Action) -> void:
 	NT_GOAP_Manager.action_library.append(action)
+	print("行为库添加行为:", action.to_array())
 	_reflash()
 
 

@@ -27,9 +27,8 @@ func _on_add_pressed() -> void:
 	if action_name_input.text.is_empty() or effects.is_empty():
 		print("请保证【行为名称】和【行动效果】不为空")
 		return
-	var new_action = NT_GOAP_Action.new(action_name_input.text, preconditions, effects)
+	var new_action = NT_GOAP_Action.new(action_name_input.text, preconditions.duplicate(), effects.duplicate())
 	add_action.emit(new_action)
-	print(new_action.name, new_action.preconditions.map(func(element): return element.to_array()), new_action.effects.map(func(element): return element.to_array()))
 
 
 func _on_preconditions_view_add_environment(environment: NT_GOAP_Environment) -> void:
