@@ -3,12 +3,12 @@ class_name NT_GOAP_Action
 
 
 var name : String  ## 行动名称
-var preconditions : Array[NT_GOAP_Environment]  ## 行动条件
-var effects : Array[NT_GOAP_Environment]  ## 行动影响
+var preconditions : Array  ## 行动条件
+var effects : Array  ## 行动影响
 var cost : int  ## 行动损耗
 
 
-func _init(_name:String = "", _preconditions:Array[NT_GOAP_Environment] = [], _effects:Array[NT_GOAP_Environment] = [], _cost:int = 0) -> void:
+func _init(_name:String = "", _preconditions:Array = [], _effects:Array = [], _cost:int = 0) -> void:
 	name = _name
 	preconditions = _preconditions
 	effects = _effects

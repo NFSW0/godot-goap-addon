@@ -10,8 +10,8 @@ signal add_action(action:NT_GOAP_Action)
 @onready var action_name_input: LineEdit = %ActionNameInput
 
 
-var preconditions : Array[NT_GOAP_Environment] = []
-var effects : Array[NT_GOAP_Environment] = []
+var preconditions : Array = []
+var effects : Array = []
 
 
 func _reflash():
