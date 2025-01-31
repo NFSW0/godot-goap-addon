@@ -15,7 +15,14 @@ func _get_drag_data(at_position: Vector2) -> Variant:
 	
 	var item_index = get_item_at_position(at_position)
 	
+	if item_index == -1:
+		return
+	
 	var environment:NT_GOAP_Environment = get_item_metadata(item_index)
+	
+	if not environment:
+		return
+	
 	var preview_text = Label.new()
 	preview_text.text = environment.name
 	var preview = Control.new()
@@ -24,6 +31,7 @@ func _get_drag_data(at_position: Vector2) -> Variant:
 	
 	if not Input.is_key_pressed(KEY_ALT):
 		remove_item(item_index)
+		set_item_metadata(item_index, null)
 		remove_environment.emit(environment)
 	
 	return environment
