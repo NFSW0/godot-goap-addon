@@ -1,5 +1,6 @@
 # TODO 重复环境检测
 # TODO 行为库按照成本从小到大排序
+@tool
 extends Control
 
 

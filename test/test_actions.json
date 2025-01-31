@@ -1,0 +1,1 @@
+[{"cost":0,"effects":[{"name":"true","value":true}],"name":"true","preconditions":[]},{"cost":0,"effects":[{"name":"-24","value":-24}],"name":"-24","preconditions":[{"name":"true","value":true}]},{"cost":0,"effects":[{"name":"19_-100","value":[19,-100]}],"name":"19_-100","preconditions":[{"name":"true","value":true},{"name":"-24","value":-24}]}]

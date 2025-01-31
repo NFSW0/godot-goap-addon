@@ -1,3 +1,4 @@
+@tool
 extends Resource
 class_name NT_GOAP_Action
 
@@ -90,11 +91,11 @@ func _validate() -> bool:
 		printerr("Action cost cannot be negative.")
 		return false
 	for precondition in preconditions:
-		if not precondition.instance_of(NT_GOAP_Environment):
+		if not precondition is NT_GOAP_Environment:
 			printerr("Invalid precondition detected.")
 			return false
 	for effect in effects:
-		if not effect.instance_of(NT_GOAP_Environment):
+		if not effect is NT_GOAP_Environment:
 			printerr("Invalid effect detected.")
 			return false
 	return true

@@ -1,3 +1,4 @@
+@tool
 extends Resource
 class_name NT_GOAP_Environment
 
