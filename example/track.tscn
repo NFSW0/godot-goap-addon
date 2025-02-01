@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq0t7vwjepsut"]
+
+[ext_resource type="Script" path="res://example/track.gd" id="1_jnc81"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hrav7"]
+
+[node name="Track" type="Area2D"]
+script = ExtResource("1_jnc81")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hrav7")
