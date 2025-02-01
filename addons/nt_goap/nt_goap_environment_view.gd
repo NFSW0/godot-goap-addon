@@ -31,7 +31,6 @@ func _get_drag_data(at_position: Vector2) -> Variant:
 	
 	if not Input.is_key_pressed(KEY_ALT):
 		remove_item(item_index)
-		set_item_metadata(item_index, null)
 		remove_environment.emit(environment)
 	
 	return environment
