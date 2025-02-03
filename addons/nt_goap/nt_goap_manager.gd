@@ -2,6 +2,7 @@
 # TODO 行为库按照损耗从小到大排序，目的是在生成行动计划时永远优先低损耗的行动
 @tool
 extends Control
+class_name _NT_GOAP_Manager
 
 
 ## 生成行动计划, 传入【目标环境、当前环境、行为库】, 返回【行动计划】

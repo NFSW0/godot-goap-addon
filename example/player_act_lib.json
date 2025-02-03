@@ -1,0 +1,27 @@
+[
+	{
+		"cost": 0,
+		"effects": [
+			{
+				"name": "move_in_the_direction",
+				"value": [
+					0,
+					0
+				]
+			}
+		],
+		"name": "move_in_the_direction",
+		"preconditions": []
+	},
+	{
+		"cost": 0,
+		"effects": [
+			{
+				"name": "shoot",
+				"value": true
+			}
+		],
+		"name": "shoot",
+		"preconditions": []
+	}
+]

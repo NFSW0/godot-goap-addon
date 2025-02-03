@@ -22,6 +22,7 @@ tile_set = ExtResource("1_r3e4x")
 [node name="Player" type="CharacterBody2D" parent="." groups=["Player"]]
 position = Vector2(109, 288)
 script = ExtResource("2_xc681")
+act_lib_resource_path = "res://example/player_act_lib.json"
 bullet_scene = ExtResource("3_3elfk")
 track_scene = ExtResource("4_d578r")
 
@@ -47,7 +48,7 @@ grow_vertical = 2
 scale = Vector2(0.523994, 0.523994)
 size_flags_horizontal = 4
 text = "WSAD移动
-E射击"
+E随机射击"
 horizontal_alignment = 1
 vertical_alignment = 1
 

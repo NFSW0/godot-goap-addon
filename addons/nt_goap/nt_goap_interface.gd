@@ -15,7 +15,8 @@ extends Control
 @onready var debug_contral: Control = %DebugContral  ## 面板-调试控制板
 @onready var debug_view: Control = %DebugView  ## 面板-调试结果
 
-@onready var nt_goap_manager = get_node_or_null("/root/NT_GOAP_Manager")
+
+var nt_goap_manager = NT_GOAP_Manager
 
 
 func _ready() -> void:
@@ -44,7 +45,6 @@ func _on_e_add_add_environment(environment: NT_GOAP_Environment) -> void:
 	_reflash()
 func _on_a_add_add_action(action: NT_GOAP_Action) -> void:
 	NT_GOAP_Manager.action_library.append(action)
-	print("行为库添加行为:", action.to_array())
 	_reflash()
 
 

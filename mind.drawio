@@ -13,7 +13,7 @@
         <mxCell id="4GTQo5QM6bafJJ9mTJLX-2" value="&quot;行为&quot;&lt;br&gt;名称&lt;br&gt;条件&lt;br&gt;效果&lt;br&gt;成本" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="80" y="1000" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="4GTQo5QM6bafJJ9mTJLX-3" value="规划器&lt;br&gt;&lt;div&gt;(传递世界环境和目标效果)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="4GTQo5QM6bafJJ9mTJLX-3" value="规划器&lt;br&gt;&lt;div&gt;(行为库-世界环境-目标效果)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="290" y="560" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4GTQo5QM6bafJJ9mTJLX-4" value="行为空间&lt;div&gt;(存储所有行为)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -243,8 +243,11 @@
         <mxCell id="LrOHb_qDLONoKuuN_F7q-2" value="对于移动行为：&lt;br&gt;最终目标产生目标坐标&lt;br&gt;本地环境产生当前坐标&lt;br&gt;两者存在则产生移动行为" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="1" vertex="1">
           <mxGeometry x="1920" y="620" width="140" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="uitV5ZKknbXZIUc3CkKT-1" value="同步数据和显示&lt;br&gt;显示变化同步改正数据&lt;br&gt;数据变化同步改正显示" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+        <mxCell id="uitV5ZKknbXZIUc3CkKT-1" value="同步数据和显示&lt;br&gt;显示变化同步改正数据&lt;br&gt;数据变化同步改正显示" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="1" vertex="1">
           <mxGeometry x="2080" y="620" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="PjA5c2Vl6O-xNxODZwNV-1" value="行动" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="240" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

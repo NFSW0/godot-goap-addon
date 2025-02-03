@@ -1,0 +1,13 @@
+[
+	{
+		"name": "move_in_the_direction",
+		"value": [
+			0,
+			0
+		]
+	},
+	{
+		"name": "shoot",
+		"value": true
+	}
+]
