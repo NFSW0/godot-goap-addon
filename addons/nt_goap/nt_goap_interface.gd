@@ -16,7 +16,7 @@ extends Control
 @onready var debug_view: Control = %DebugView  ## 面板-调试结果
 
 
-var nt_goap_manager = NT_GOAP_Manager
+@onready var nt_goap_manager = get_node_or_null("/root/NT_GOAP_Manager")
 
 
 func _ready() -> void:
