@@ -246,8 +246,53 @@
         <mxCell id="uitV5ZKknbXZIUc3CkKT-1" value="同步数据和显示&lt;br&gt;显示变化同步改正数据&lt;br&gt;数据变化同步改正显示" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="1" vertex="1">
           <mxGeometry x="2080" y="620" width="140" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="PjA5c2Vl6O-xNxODZwNV-1" value="行动" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="PjA5c2Vl6O-xNxODZwNV-1" value="行动" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="240" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MLxiY1txUgFmYhGf96jd-1" value="最新问题：&lt;br&gt;不固定行为效果如何处理" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="2520" y="80" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MLxiY1txUgFmYhGf96jd-2" value="比如移动：&lt;br&gt;效果是让坐标等于目标坐标&lt;br&gt;效果是接近目标&lt;br&gt;效果是让目标进入接触范围" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="2520" y="157.5" width="160" height="82.5" as="geometry" />
+        </mxCell>
+        <mxCell id="MLxiY1txUgFmYhGf96jd-3" value="关键点：&lt;br&gt;不同数值下让GOAP依然决策出移动" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="2520" y="280" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MLxiY1txUgFmYhGf96jd-4" value="目标指向性行为，存在目标且不在接触范围内则可以通过A*算法实现“靠近”" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="2520" y="360" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MLxiY1txUgFmYhGf96jd-5" value="玩家控制时，不存在目标，直接Call同名方法？" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="2520" y="440" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MLxiY1txUgFmYhGf96jd-6" value="攻击条件：目标在接触范围内&lt;br&gt;但是玩家不需要此条件也可以执行" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="2520" y="520" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MLxiY1txUgFmYhGf96jd-7" value="攻击条件：处于自由状态&lt;br&gt;玩家也需要此条件才可执行" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="2520" y="600" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MLxiY1txUgFmYhGf96jd-8" value="自由状态整合到攻击行为逻辑中" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="2760" y="600" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MLxiY1txUgFmYhGf96jd-11" value="使用行为树或者状态机避免突兀行为" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="2760" y="640" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zm1GAX3gERYWx1EzTm6h-1" value="行为树需要传递行为数据" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="2760" y="680" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zm1GAX3gERYWx1EzTm6h-2" value="行为数据与本地世界环境高度相似" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="2760" y="720" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zm1GAX3gERYWx1EzTm6h-3" value="考虑整合行为树和GOAP" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="2760" y="760" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zm1GAX3gERYWx1EzTm6h-4" value="优点：&lt;div&gt;1.GOAP决策仅需改变行为数据，行为树自动根据行为数据执行对应的行为，真正分离决策和行为&lt;/div&gt;&lt;div&gt;2.玩家通过输入改变行为数据即可&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="2760" y="800" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Zm1GAX3gERYWx1EzTm6h-6" value="模拟：&lt;br&gt;在复杂地形中玩家和AI对战，相互知晓坐标，需要完成寻路、判定进攻障碍" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="2760" y="880" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Zm1GAX3gERYWx1EzTm6h-7" value="开发：&lt;br&gt;行为树类似可编程弹幕采用模块化开发&lt;br&gt;GOAP采用字典和数组开发&lt;br&gt;字典KEY作为唯一名称" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#009900;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=0;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="2760" y="960" width="200" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
